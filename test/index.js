@@ -50,13 +50,13 @@ describe('netinterfaces', function () {
   before(function () {
     mockfs({
       '/sys/class/net/lo': {
-        'address': '00:00:00:00:00:00\n'
+        address: '00:00:00:00:00:00\n'
       },
       '/sys/class/net/eth0': {
-        'address': '00:11:22:33:44:55\n'
+        address: '00:11:22:33:44:55\n'
       },
       '/sys/class/net/eth1': {
-        'address': '00:11:22:33:44:66\n'
+        address: '00:11:22:33:44:66\n'
       }
     });
 
