@@ -9,13 +9,14 @@ var os = require('os');
 var realNetworkIf = os.networkInterfaces;
 function netifMock() {
   return {
-    lo: [{
-      address: '127.0.0.1',
-      netmask: '255.0.0.0',
-      family: 'IPv4',
-      mac: '00:00:00:00:00:00',
-      internal: true
-    },
+    lo: [
+      {
+        address: '127.0.0.1',
+        netmask: '255.0.0.0',
+        family: 'IPv4',
+        mac: '00:00:00:00:00:00',
+        internal: true
+      },
       {
         address: '::1',
         netmask: 'ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff',
@@ -23,14 +24,16 @@ function netifMock() {
         mac: '00:00:00:00:00:00',
         scopeid: 0,
         internal: true
-      }],
-    eth0: [{
-      address: '10.0.0.1',
-      netmask: '255.255.255.0',
-      family: 'IPv4',
-      mac: 'ab:ab:ab:ab:01:02',
-      internal: false
-    },
+      }
+    ],
+    eth0: [
+      {
+        address: '10.0.0.1',
+        netmask: '255.255.255.0',
+        family: 'IPv4',
+        mac: 'ab:ab:ab:ab:01:02',
+        internal: false
+      },
       {
         address: 'fe80::b1c3:c1c3:a1a3:31b3',
         netmask: 'ffff:ffff:ffff:ffff::',
@@ -38,7 +41,8 @@ function netifMock() {
         mac: 'ab:ab:ab:ab:01:02',
         scopeid: 3,
         internal: false
-      }]
+      }
+    ]
   };
 }
 
