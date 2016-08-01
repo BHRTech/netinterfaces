@@ -57,6 +57,7 @@ Some packages may be unable to operate with inactive network interfaces present 
 MIT © [donothingloop](blog.wq.lc)
 
 
+
 [npm-image]: https://badge.fury.io/js/netinterfaces.svg
 [npm-url]: https://npmjs.org/package/netinterfaces
 [travis-image]: https://travis-ci.org/donothingloop/netinterfaces.svg?branch=master
