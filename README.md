@@ -50,7 +50,7 @@ If you want to patch the *os.networkInterfaces* function you can use the followi
 require('netinterfaces').patch();
 ```
 
-Pay attention to place this line **at the top** of you file.
+Pay attention to place this line **at the top** of your file.
 Some packages may be unable to operate with inactive network interfaces present in the list. 
 ## License
 
